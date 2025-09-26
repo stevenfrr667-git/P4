@@ -6,17 +6,31 @@
 }
 
 :root {
+  /* Couleurs principales */
   --main-color: #9356DC;
   --second-color: #FF79DA;
   --animation-color: #99E2D0;
-  --shadow-light: 0px 2px 4px rgba(0,0,0,0.15);
-  --shadow-medium: 0px 4px 4px rgba(0,0,0,0.25);
-  --shadow-strong: 0px 4px 15px rgba(0,0,0,0.15);
+  /* Couleurs texte */
+  --text-color: #333333;
+  --text-dark: #101010;
+  --text-black: #000000;
+  --text-gray: #353535;
+  --text-green: #008766;
+  /* Couleurs de fond */
+  --bg-white: #FFFFFF;
+  --bg-light: #F6F6F6;
+  --bg-lighter: #F3F3F3;
+  --bg-gray: #eaeaea;
+  /* Ombres */
+  --shadow-light: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  --shadow-medium: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --shadow-strong: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  --shadow-card: 0px 4px 15px rgba(0, 0, 0, 0.10);
 }
 
 body {
-  background-color: white;
-  color: #333;
+  background-color: var(--bg-white);
+  color: var(--text-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -25,7 +39,7 @@ h1 {
   font-weight: 700;
   margin: 5px;
   margin-bottom: 20px;
-  color: #000000;
+  color: var(--text-black);
 }
 
 h2 {
@@ -37,7 +51,7 @@ h2 {
   background: linear-gradient(to bottom, var(--second-color), var(--main-color));
   border: none;
   border-radius: 30px;
-  color: white;
+  color: var(--bg-white);
   padding: 15px 20px;
 }
 .btn:hover {
@@ -46,7 +60,7 @@ h2 {
 
 .btn-like {
   background: none;
-  color: #101010;
+  color: var(--text-dark);
   font-size: 20px;
 }
 .btn-like .fa-solid {
@@ -63,10 +77,10 @@ h2 {
 }
 
 .btn-fonctionnement {
-  background: white;
+  background: var(--bg-white);
   border-radius: 10px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  color: black;
+  box-shadow: var(--shadow-strong);
+  color: var(--text-black);
   position: relative;
 }
 .btn-fonctionnement .fonctionnement-icon {
@@ -82,7 +96,7 @@ h2 {
   align-items: center;
   background-color: var(--main-color);
   border-radius: 50%;
-  color: white;
+  color: var(--bg-white);
   display: flex;
   height: 20px;
   justify-content: center;
@@ -108,7 +122,7 @@ header {
   width: 100%;
 }
 .header-bar .fa-arrow-left {
-  color: #333;
+  color: var(--text-color);
   font-size: 24px;
   left: 20px;
   position: absolute;
@@ -116,8 +130,8 @@ header {
 
 .header-bottom {
   align-items: center;
-  background-color: #eaeaea;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: var(--bg-gray);
+  box-shadow: var(--shadow-medium);
   display: flex;
   justify-content: center;
   margin-top: 3px;
@@ -133,7 +147,7 @@ header {
 
 .header-top {
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: var(--bg-white);
   box-shadow: var(--shadow-light);
   display: flex;
   justify-content: center;
@@ -147,13 +161,13 @@ header {
 
 /******* TOP *******/
 .top-section {
-  background-color: #F3F3F3;
+  background-color: var(--bg-lighter);
   margin-top: 5px;
   padding: 40px 15px;
   text-align: center;
 }
 .top-section p {
-  color: #353535;
+  color: var(--text-gray);
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 20px;
@@ -170,10 +184,10 @@ header {
 
 .btn-fonctionnement {
   align-items: center;
-  background-color: #F6F6F6;
+  background-color: var(--bg-light);
   border-radius: 20px;
   box-shadow: var(--shadow-strong);
-  color: black;
+  color: var(--text-black);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -185,13 +199,13 @@ header {
 }
 
 .fonctionnement-section {
-  background-color: #FFFFFF;
+  background-color: var(--bg-white);
   padding: 50px 15px;
 }
 
 /******* RESTAURANTS LIST *******/
 .restaurant-card {
-  background-color: white;
+  background-color: var(--bg-white);
   border-radius: 15px;
   max-height: 251px;
   overflow: hidden;
@@ -222,7 +236,7 @@ header {
 .restaurant-card-image .badge {
   background: var(--animation-color);
   border-radius: 2px;
-  color: #008766;
+  color: var(--text-green);
   font-size: 14px;
   font-weight: 500;
   padding: 5px 12px;
@@ -238,21 +252,21 @@ header {
 }
 .restaurant-cards-container .restaurant-card-link {
   text-decoration: none;
-  color: black;
+  color: var(--text-black);
   width: 100%;
 }
 
 .restaurants-section {
-  background-color: #F3F3F3;
+  background-color: var(--bg-lighter);
   padding: 60px 15px 15px 15px;
 }
 
 /******* RESTAURANT PAGE *******/
 .card-menu {
-  background: white;
+  background: var(--bg-white);
   border-radius: 15px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  color: black;
+  box-shadow: var(--shadow-card);
+  color: var(--text-black);
   position: relative;
   text-align: left;
   width: 100%;
@@ -281,7 +295,7 @@ header {
 .card-menu .checkbox-menu {
   align-items: center;
   background-color: var(--animation-color);
-  color: white;
+  color: var(--bg-white);
   display: flex;
   height: 100%;
   justify-content: center;
@@ -335,7 +349,7 @@ header {
 }
 
 .menu-section {
-  background-color: #F6F6F6;
+  background-color: var(--bg-light);
   border-radius: 25px 25px 0 0;
   margin-top: -20px;
   padding: 20px;
@@ -390,8 +404,8 @@ header {
 }
 
 .footer-section {
-  background-color: #353535;
-  color: white;
+  background-color: var(--text-gray);
+  color: var(--bg-white);
   padding: 30px 15px;
   text-align: left;
 }
@@ -415,7 +429,7 @@ header {
   .top-section {
     margin-top: 0px;
     padding: 20px 15px 30px 15px;
-    background-color: #F6F6F6;
+    background-color: var(--bg-light);
   }
   h1 {
     font-size: 45px;
@@ -435,7 +449,6 @@ header {
   }
   .button-container .btn-fonctionnement {
     width: 35%;
-    font-size: 16px;
     font-weight: 500;
   }
   .restaurants-section {
@@ -499,5 +512,77 @@ header {
   }
   .menu-container h2 {
     width: 5%;
+  }
+}
+/******* MEDIA QUERIES TABLETTE *******/
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Header */
+  .logo-ohmyfood {
+    width: 25%;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  /* Section top */
+  .top-section {
+    padding: 30px 40px;
+    background-color: var(--bg-light);
+  }
+  /* Fonctionnement */
+  .fonctionnement-section {
+    padding: 40px 50px;
+  }
+  .fonctionnement-section h2 {
+    padding-left: 5%;
+    text-align: center;
+  }
+  .button-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .button-container .btn-fonctionnement {
+    width: 45%;
+    font-size: 16px;
+  }
+  /* Restaurants */
+  .restaurants-section {
+    padding: 40px 50px;
+  }
+  .restaurants-section h2 {
+    padding-left: 5%;
+    text-align: center;
+  }
+  .restaurant-cards-container {
+    justify-content: center;
+    gap: 30px;
+  }
+  .restaurant-cards-container .restaurant-card-link {
+    width: 45%;
+  }
+  /* Restaurant page */
+  .menu-section {
+    padding: 30px;
+  }
+  .menu-container h2 {
+    width: 15%;
+  }
+  .food-picture {
+    height: 300px;
+  }
+  .name-restaurant h1 {
+    font-size: 30px;
+  }
+  .btn-commander-container .btn {
+    font-size: 18px;
+    padding: 15px 50px;
+  }
+  /* Footer */
+  .footer-section {
+    text-align: center;
+  }
+  .footer-containers {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
   }
 }/*# sourceMappingURL=main.css.map */
