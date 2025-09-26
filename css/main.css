@@ -1,0 +1,503 @@
+/******* GENERAL *******/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #9356DC;
+  --second-color: #FF79DA;
+  --animation-color: #99E2D0;
+  --shadow-light: 0px 2px 4px rgba(0,0,0,0.15);
+  --shadow-medium: 0px 4px 4px rgba(0,0,0,0.25);
+  --shadow-strong: 0px 4px 15px rgba(0,0,0,0.15);
+}
+
+body {
+  background-color: white;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 5px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+h2 {
+  padding-bottom: 30px;
+}
+
+/******* BUTTONS *******/
+.btn {
+  background: linear-gradient(to bottom, var(--second-color), var(--main-color));
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 15px 20px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-like {
+  background: none;
+  color: #101010;
+  font-size: 20px;
+}
+.btn-like .fa-solid {
+  background: linear-gradient(to bottom, var(--main-color), var(--second-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: none;
+}
+.btn-like:hover .fa-regular {
+  display: none;
+}
+.btn-like:hover .fa-solid {
+  display: inline;
+}
+
+.btn-fonctionnement {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  color: black;
+  position: relative;
+}
+.btn-fonctionnement .fonctionnement-icon {
+  color: gray;
+  font-size: 140%;
+  left: 30px;
+  position: absolute;
+}
+.btn-fonctionnement .fonctionnement-icon:hover {
+  color: var(--main-color);
+}
+.btn-fonctionnement .step-badge {
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  left: -10px;
+  position: absolute;
+  width: 20px;
+}
+
+/******* HEADER *******/
+header {
+  box-shadow: var(--shadow-medium);
+  width: 100%;
+}
+
+.header-bar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 5px 15px;
+  position: relative;
+  width: 100%;
+}
+.header-bar .fa-arrow-left {
+  color: #333;
+  font-size: 24px;
+  left: 20px;
+  position: absolute;
+}
+
+.header-bottom {
+  align-items: center;
+  background-color: #eaeaea;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+  padding: 20px 0;
+}
+.header-bottom .header-address {
+  align-items: center;
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  gap: 10px;
+}
+
+.header-top {
+  align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: var(--shadow-light);
+  display: flex;
+  justify-content: center;
+}
+
+.logo-ohmyfood {
+  align-items: center;
+  margin: 10px 0;
+  width: 40%;
+}
+
+/******* TOP *******/
+.top-section {
+  background-color: #F3F3F3;
+  margin-top: 5px;
+  padding: 40px 15px;
+  text-align: center;
+}
+.top-section p {
+  color: #353535;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/******* FONCTIONNEMENT *******/
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-fonctionnement {
+  align-items: center;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  box-shadow: var(--shadow-strong);
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 25px;
+  position: relative;
+  width: 90%;
+}
+
+.fonctionnement-section {
+  background-color: #FFFFFF;
+  padding: 50px 15px;
+}
+
+/******* RESTAURANTS LIST *******/
+.restaurant-card {
+  background-color: white;
+  border-radius: 15px;
+  max-height: 251px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.restaurant-card-description {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.restaurant-card-description .restaurant-card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-card-image {
+  position: relative;
+}
+.restaurant-card-image img {
+  display: block;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.restaurant-card-image .badge {
+  background: var(--animation-color);
+  border-radius: 2px;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.restaurant-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.restaurant-cards-container .restaurant-card-link {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+.restaurants-section {
+  background-color: #F3F3F3;
+  padding: 60px 15px 15px 15px;
+}
+
+/******* RESTAURANT PAGE *******/
+.card-menu {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  color: black;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+  align-items: center;
+}
+.card-menu .price-menu {
+  font-weight: 700;
+  position: absolute;
+  right: 20px;
+  top: 38px;
+}
+.card-menu .menu-text {
+  text-align: left;
+}
+.card-menu .menu-text p {
+  font-size: 14px;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 270px;
+}
+.card-menu .checkbox-menu {
+  align-items: center;
+  background-color: var(--animation-color);
+  color: white;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  border-radius: 0 15px 15px 0;
+  transition: width 0.4s ease;
+}
+.card-menu .checkbox-menu .fa-circle-check {
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.card-menu:hover .checkbox-menu {
+  width: 59px;
+}
+.card-menu:hover .checkbox-menu .fa-circle-check {
+  opacity: 1;
+}
+.card-menu:hover .price-menu {
+  right: 70px;
+  transition: right 0.4s ease;
+}
+.card-menu:hover .menu-text p {
+  width: 150px;
+  transition: width 0.4s ease;
+}
+
+.food-picture {
+  display: block;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.menu-container h2 {
+  border-bottom: var(--animation-color) 3px solid;
+  padding: 0px 0 10px 0;
+  width: 11%;
+  text-transform: uppercase;
+}
+
+.menu-section {
+  background-color: #F6F6F6;
+  border-radius: 25px 25px 0 0;
+  margin-top: -20px;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.name-restaurant {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+.name-restaurant .btn-like {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+}
+.name-restaurant h1 {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0;
+}
+
+.btn-commander-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -30px;
+  width: 100%;
+}
+.btn-commander-container .btn {
+  font-size: 20px;
+  padding: 15px 60px;
+  width: auto;
+}
+
+/******* FOOTER *******/
+.footer-containers {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-containers .footer-item {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-section {
+  background-color: #353535;
+  color: white;
+  padding: 30px 15px;
+  text-align: left;
+}
+.footer-section h2 {
+  font-family: "Shrikhand", cursive;
+}
+
+/******* MEDIA QUERIES *******/
+@media (min-width: 1024px) {
+  header {
+    box-shadow: none;
+  }
+  .header-bottom {
+    box-shadow: none;
+    margin-top: 0;
+  }
+  .logo-ohmyfood {
+    width: 15%;
+    margin: 25px 0;
+  }
+  .top-section {
+    margin-top: 0px;
+    padding: 20px 15px 30px 15px;
+    background-color: #F6F6F6;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  .card-menu:hover .menu-text p {
+    width: 100%;
+    transition: width 0.4s ease;
+  }
+  .fonctionnement-section {
+    padding: 60px 100px;
+  }
+  .fonctionnement-section h2 {
+    padding-left: 11%;
+  }
+  .button-container {
+    flex-wrap: nowrap;
+  }
+  .button-container .btn-fonctionnement {
+    width: 35%;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .restaurants-section {
+    padding: 60px 100px;
+    text-align: left;
+    position: relative;
+  }
+  .restaurants-section h2 {
+    padding-left: 11%;
+  }
+  .restaurant-cards-container {
+    width: 100%;
+    justify-content: center;
+    gap: 50px 100px;
+  }
+  .restaurant-cards-container .restaurant-card-link {
+    width: 35%;
+  }
+  .restaurant-card {
+    width: 100%;
+  }
+  .footer-section {
+    margin: 0;
+    position: relative;
+  }
+  .footer-section h2 {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: 0px;
+  }
+  .footer-containers {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+  .menu-section-container {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-section-container .menu-section {
+    padding: 40px 100px;
+    width: 80%;
+    margin-top: -40px;
+    align-items: center;
+  }
+  .menu-container h2 {
+    width: 10%;
+  }
+  .name-restaurant h1 {
+    font-size: 36px;
+  }
+  .food-picture {
+    height: 380px;
+  }
+  .name-restaurant {
+    justify-content: center;
+  }
+  .name-restaurant .btn-like {
+    position: relative;
+  }
+  .menu-container h2 {
+    width: 5%;
+  }
+}/*# sourceMappingURL=main.css.map */

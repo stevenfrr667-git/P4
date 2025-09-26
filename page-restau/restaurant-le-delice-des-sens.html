@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ohmyfood – Restaurants et menus en ligne</title>
+  <title>Le délice des sens</title>
 
   <!-- SEO -->
   <meta name="description" content="Ohmyfood : découvrez les meilleurs restaurants et explorez leurs menus en ligne. Réservez et profitez d’une expérience culinaire unique.">
@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 
     <!-- Ton CSS -->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header>
@@ -38,72 +38,138 @@
         </div>
     </header>
     <main>
-        <section class="menu-section">
-            <div class="name-restaurant">
-                <h1>La palette du goût</h1>
-                <button class="btn btn-like">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                </button>
-            </div>
-            <div class="menu-container">
-                <h2>Entrées</h2>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-            </div>
-            <div class="menu-container">
-                <h2>Plats</h2>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-            </div>
-            <div class="menu-container">
-                <h2>Desserts</h2>
-               <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-            </div>
-        </section>
+        <div class="menu-section-container">
+  <section class="menu-section">
+    <div class="name-restaurant">
+      <h1>Le délice des sens</h1>
+      <button class="btn btn-like">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+      </button>
+    </div>
+
+    <!-- 🥗 Entrées -->
+    <div class="menu-container">
+      <h2>Entrées</h2>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Tartare de thon</h3>
+          <p>Assaisonné au yuzu</p>
+        </div>
+        <span class="price-menu">25€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Bouchée de homard croustillant</h3>
+          <p>Et sa farandole de petits légumes</p>
+        </div>
+        <span class="price-menu">35€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Velouté de cèpes</h3>
+          <p>Aux truffes</p>
+        </div>
+        <span class="price-menu">20€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+    </div>
+
+    <!-- 🍗 Plats -->
+    <div class="menu-container">
+      <h2>Plats</h2>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Poulet rôti aux herbes de Provence</h3>
+          <p>Et sa crème de truffe</p>
+        </div>
+        <span class="price-menu">40€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Langouste rôtie</h3>
+          <p>Et ses légumes de saison</p>
+        </div>
+        <span class="price-menu">35€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Côte de bœuf Angus</h3>
+          <p>Et sa purée de panais</p>
+        </div>
+        <span class="price-menu">44€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+    </div>
+
+    <!-- 🍰 Desserts -->
+    <div class="menu-container">
+      <h2>Desserts</h2>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Farandole de desserts</h3>
+          <p>Du chef</p>
+        </div>
+        <span class="price-menu">18€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Crème brûlée</h3>
+          <p>Revisitée</p>
+        </div>
+        <span class="price-menu">22€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Tiramisu</h3>
+          <p>À la noisette</p>
+        </div>
+        <span class="price-menu">23€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+      <div class="btn-commander-container">
+<button class="btn">Commander</button>
+</div>
+    </div>
+  </section>
+</div>
+
     </main>
     <footer class="footer-section">
-        <img class="logo-ohmyfood-footer" src="../images/logo/ohmyfood-white.png" alt="logo ohmyfood">
+        <h2>Ohmyfood</h2>
         <div class="footer-containers">
             <div class="footer-item">
                 <i class="fa-solid fa-utensils"></i>

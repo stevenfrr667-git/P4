@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 
     <!-- Ton CSS -->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header>
@@ -38,79 +38,136 @@
         </div>
     </header>
     <main>
-        <section class="menu-section">
-            <div class="name-restaurant">
-                <h1>La palette du goût</h1>
-                <button class="btn btn-like">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
-                </button>
-            </div>
-            <div class="menu-container">
-                <h2>Entrées</h2>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                    <div class="checkbox-menu">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-            </div>
-            <div class="menu-container">
-                <h2>Plats</h2>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-            </div>
-            <div class="menu-container">
-                <h2>Desserts</h2>
-               <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                    
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-                <article class="btn card-menu">
-                    <h3>Fricassée d'escargots</h3>
-                    <p>Au piment d'Espelette</p>
-                    <span class="price-menu">12€</span>
-                </article>
-            </div>
-            <div class="btn-commander-container">
-                <button class="btn">Commander</button>
-            </div>
-        </section>
+       <div class="menu-section-container">
+  <section class="menu-section">
+    <div class="name-restaurant">
+      <h1>À la française</h1>
+      <button class="btn btn-like">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+      </button>
+    </div>
+
+    <!-- 🥗 Entrées -->
+    <div class="menu-container">
+      <h2>Entrées</h2>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Tartare de poulpe acidulé</h3>
+          <p>Aux zestes d'orange</p>
+        </div>
+        <span class="price-menu">25€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Velouté de légumes d'antan</h3>
+          <p>Carotte, panais, topinambour</p>
+        </div>
+        <span class="price-menu">35€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Soupe à l'oignon</h3>
+          <p>Revisitée</p>
+        </div>
+        <span class="price-menu">20€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+    </div>
+
+    <!-- 🍗 Plats -->
+    <div class="menu-container">
+      <h2>Plats</h2>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Coquilles Saint-Jacques</h3>
+          <p>Accompagnées d'une purée de panais</p>
+        </div>
+        <span class="price-menu">40€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Magret de canard</h3>
+          <p>Et parmentier de pommes de terre</p>
+        </div>
+        <span class="price-menu">35€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+          <p>Sur son lit de gnocchis aux légumes</p>
+        </div>
+        <span class="price-menu">44€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+    </div>
+
+    <!-- 🍰 Desserts -->
+    <div class="menu-container">
+      <h2>Desserts</h2>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Pétales de violettes glacés</h3>
+          <p>Et purée de noisettes</p>
+        </div>
+        <span class="price-menu">18€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Fondant au chocolat</h3>
+          <p>Revisitée</p>
+        </div>
+        <span class="price-menu">22€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+      <article class="btn card-menu">
+        <div class="menu-text">
+          <h3>Millefeuille croustillant</h3>
+          <p>Myrtilles et pâte d’amande</p>
+        </div>
+        <span class="price-menu">23€</span>
+        <div class="checkbox-menu">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </article>
+      <div class="btn-commander-container">
+      <button class="btn">Commander</button>
+      </div>
+    </div>
+  </section>
+</div>
     </main>
     <footer class="footer-section">
-        <img class="logo-ohmyfood-footer" src="../images/logo/ohmyfood-white.png" alt="logo ohmyfood">
+        <h2>Ohmyfood</h2>
         <div class="footer-containers">
             <div class="footer-item">
                 <i class="fa-solid fa-utensils"></i>
