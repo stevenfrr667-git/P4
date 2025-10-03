@@ -10,6 +10,7 @@
   --main-color: #9356DC;
   --second-color: #FF79DA;
   --animation-color: #99E2D0;
+  --icon-color: #808080;
 
   /* Couleurs texte */
   --text-color: #333333;
@@ -92,7 +93,7 @@ h2 {
   position: relative;
 
   .fonctionnement-icon {
-    color: gray;
+    color: var(--icon-color);
     font-size: 140%;
     left: 30px; 
     position: absolute;
@@ -296,6 +297,7 @@ header {
     position: absolute;
     right: 20px;
     top: 38px;
+    transition: right 0.4s ease;
   }
 
   .menu-text {
